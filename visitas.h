@@ -21,9 +21,17 @@ typedef struct
     EstadoDaVisita estadoVisita;
     char local[100];
     DataVisita dataVisita;
+    char nifEmbaixadores[10];
 } DadosVisitas;
+
+extern DadosVisitas listaVisitas[MAX_VISITAS];
+extern int contadorVisitas;
 
 void adicionarVisita();
 void listarVisitas();
 void consultarVisita();
 void autorizarVisita();
+void cancelarVisita();
+void confirmarRealizacaoVisita();
+void alterarInformacaoVisita();
+void eliminarVisita();

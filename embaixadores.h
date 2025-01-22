@@ -20,6 +20,10 @@ typedef struct {
 extern int contadorEmbaixadores;
 extern DadosEmbaixador listaEmbaixadores[MAX_EMBAIXADORES];
 
+extern const char *nomesEscolas[];
+
 void listarEmbaixadores();
 void adicionarEmbaixador();
 void consultarEmbaixador();
+void alterarInformacaoEmbaixador();
+void eliminarEmbaixador();
